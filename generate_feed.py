@@ -33,13 +33,37 @@ CHANNEL = {
     "language":    "zh-CN",
     "author":      "Hermes Agent",
     "email":       "",
-    "image_url":   "",
+    "image_url":   "https://goutou08.github.io/lex-fridman-podcast/cover.jpg",
     "category":    "Technology",
     "explicit":    "false",
 }
 
-# Episode data: ep_number -> (title, guest, pub_date, category)
-# Dates must be RFC 2822 compliant: "Mon, 01 Jan 2026 00:00:00 +0000"
+# Episode cover map: ep_num -> {part: url} or just the cover slug
+# For multi-part episodes: use part key
+EPISODE_COVER_MAP = {
+    455: {"cover": "455-adam.jpg"},
+    482: {"cover": "482-pavel.jpg"},
+    484: {"cover": "484-dan.jpg"},
+    487: {"cover": "487-irving.jpg"},
+    488: {"cover": "488-joel.jpg"},
+    490: {"part1": "490-state-part1.jpg", "part2": "490-state-part2.jpg"},
+    492: {"cover": "492-rick.jpg"},
+    493: {"part1": "493-jeff-part1.jpg", "part2": "493-jeff-part2.jpg", "part3": "493-jeff-part3.jpg"},
+    494: {"cover": "494-jensen.jpg"},
+    495: {"cover": "495-lars.jpg"},
+}
+
+def episode_cover_url(ep_num, part_m):
+    base = "https://goutou08.github.io/lex-fridman-podcast/covers"
+    if ep_num not in EPISODE_COVER_MAP:
+        return f"{base}/cover.jpg"  # fallback to main cover
+    ep_map = EPISODE_COVER_MAP[ep_num]
+    if part_m and "part1" in ep_map:
+        part_key = f"part{part_m.group(1)}"
+        fname = ep_map.get(part_key, ep_map.get("cover", "cover.jpg"))
+    else:
+        fname = ep_map.get("cover", "cover.jpg")
+    return f"{base}/{fname}"
 EPISODE_DATA = {
     # Format: (title_part, guest, pub_date_rfc2822, category, duration_sec)
     495: (
@@ -203,13 +227,16 @@ def build_feed(base_url: str) -> str:
       <itunes:duration>{duration}</itunes:duration>
       <itunes:explicit>{CHANNEL['explicit']}</itunes:explicit>
       <itunes:author>{escape(guest if ep_num in EPISODE_DATA else 'Lex Fridman')}</itunes:author>
+      <itunes:image href="{episode_cover_url(ep_num, part_m)}" />
       <itunes:category text="{category if ep_num in EPISODE_DATA else 'Technology'}" />
     </item>"""
         items_xml += "\n" + item
 
     channel_img = ""
+    channel_itunes_img = ""
     if CHANNEL["image_url"]:
         channel_img = f'\n    <image>\n      <url>{CHANNEL["image_url"]}</url>\n      <title>{escape(CHANNEL["title"])}</title>\n      <link>{CHANNEL["link"]}</link>\n    </image>'
+        channel_itunes_img = f'\n    <itunes:image href="{CHANNEL["image_url"]}" />'
 
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -221,7 +248,7 @@ def build_feed(base_url: str) -> str:
     <link>{CHANNEL['link']}</link>
     <description><![CDATA[{CHANNEL['description']}]]></description>{channel_img}
     <language>{CHANNEL['language']}</language>
-    <itunes:author>{escape(CHANNEL['author'])}</itunes:author>
+    <itunes:author>{escape(CHANNEL['author'])}</itunes:author>{channel_itunes_img}
     <itunes:explicit>{CHANNEL['explicit']}</itunes:explicit>
     <itunes:category text="{CHANNEL['category']}" />
     <atom:link href="{base_url.rstrip('/')}/feed.xml" rel="self" type="application/rss+xml" />
