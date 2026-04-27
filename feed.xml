@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lex Fridman Podcast (中文精读版)</title>
+    <link>https://lexfridman.com</link>
+    <description><![CDATA[Lex Fridman 播客中文精读 TTS 版。由 AI 生成的中文语音，由 Hermes Agent 自动化制作。]]></description>
+    <language>zh-CN</language>
+    <itunes:author>Hermes Agent</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    <atom:link href="https://goutou08.github.io/lex-fridman-podcast/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>#495 — Lars Brownworth: Vikings, Ragnar, Berserkers, Valhalla &amp; the Warriors of the Viking Age</title>
+      <description><![CDATA[Lex Fridman Podcast 第 495 期。<br/>嘉宾：Lars Brownworth。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">495@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/495-lars-brownworth.mp3" length="7778829" type="audio/mpeg" />
+      <itunes:duration>0:10:38</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Lars Brownworth</itunes:author>
+      <itunes:category text="History" />
+    </item>
+    <item>
+      <title>#494 — Jensen Huang: NVIDIA – The $4 Trillion Company &amp; the AI Revolution</title>
+      <description><![CDATA[Lex Fridman Podcast 第 494 期。<br/>嘉宾：Jensen Huang。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">494@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/494-jensen-huang.mp3" length="7279869" type="audio/mpeg" />
+      <itunes:duration>0:07:52</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Jensen Huang</itunes:author>
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#493 — Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming (第1部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 493 期。<br/>嘉宾：Jeff Kaplan。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第1部分)]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">493-1@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/493-jeff-kaplan-part1.mp3" length="3982413" type="audio/mpeg" />
+      <itunes:duration>0:04:12</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Jeff Kaplan</itunes:author>
+      <itunes:category text="Gaming" />
+    </item>
+    <item>
+      <title>#493 — Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming (第2部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 493 期。<br/>嘉宾：Jeff Kaplan。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第2部分)]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">493-2@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/493-jeff-kaplan-part2.mp3" length="4232541" type="audio/mpeg" />
+      <itunes:duration>0:04:54</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Jeff Kaplan</itunes:author>
+      <itunes:category text="Gaming" />
+    </item>
+    <item>
+      <title>#493 — Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming (第3部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 493 期。<br/>嘉宾：Jeff Kaplan。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第3部分)]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">493-3@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/493-jeff-kaplan-part3.mp3" length="5021517" type="audio/mpeg" />
+      <itunes:duration>0:05:43</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Jeff Kaplan</itunes:author>
+      <itunes:category text="Gaming" />
+    </item>
+    <item>
+      <title>#492 — Rick Beato: Greatest Guitarists of All Time, History &amp; Future of Music</title>
+      <description><![CDATA[Lex Fridman Podcast 第 492 期。<br/>嘉宾：Rick Beato。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Tue, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">492@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/492-rick-beato.mp3" length="6748797" type="audio/mpeg" />
+      <itunes:duration>0:10:54</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Rick Beato</itunes:author>
+      <itunes:category text="Music" />
+    </item>
+    <item>
+      <title>#490 — State of AI 2026: State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI (第1部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 490 期。<br/>嘉宾：State of AI 2026。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第1部分)]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">490-1@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/490-state-of-ai-2026-part1.mp3" length="5751597" type="audio/mpeg" />
+      <itunes:duration>0:06:22</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>State of AI 2026</itunes:author>
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#490 — State of AI 2026: State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI (第2部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 490 期。<br/>嘉宾：State of AI 2026。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第2部分)]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">490-2@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/490-state-of-ai-2026-part2.mp3" length="6250125" type="audio/mpeg" />
+      <itunes:duration>0:07:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>State of AI 2026</itunes:author>
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#488 — Joel David Hamkins: Infinity, Paradoxes that Broke Mathematics, Gödel Incompleteness &amp; the Multiverse</title>
+      <description><![CDATA[Lex Fridman Podcast 第 488 期。<br/>嘉宾：Joel David Hamkins。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">488@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/488-joel-david-hamkins.mp3" length="7204413" type="audio/mpeg" />
+      <itunes:duration>0:09:02</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Joel David Hamkins</itunes:author>
+      <itunes:category text="Mathematics" />
+    </item>
+    <item>
+      <title>#487 — Irving Finkel: Deciphering Secrets of Ancient Civilizations &amp; Flood Myths</title>
+      <description><![CDATA[Lex Fridman Podcast 第 487 期。<br/>嘉宾：Irving Finkel。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">487@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/487-irving-finkel.mp3" length="6513357" type="audio/mpeg" />
+      <itunes:duration>0:07:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Irving Finkel</itunes:author>
+      <itunes:category text="History" />
+    </item>
+    <item>
+      <title>#484 — Dan Houser: GTA, Red Dead Redemption, Rockstar, Absurd &amp; Future of Gaming</title>
+      <description><![CDATA[Lex Fridman Podcast 第 484 期。<br/>嘉宾：Dan Houser。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">484@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/484-dan-houser.mp3" length="4467837" type="audio/mpeg" />
+      <itunes:duration>0:05:21</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Dan Houser</itunes:author>
+      <itunes:category text="Gaming" />
+    </item>
+    <item>
+      <title>#482 — Pavel Durov: Telegram, Freedom, Censorship, Money, Power &amp; Human Nature</title>
+      <description><![CDATA[Lex Fridman Podcast 第 482 期。<br/>嘉宾：Pavel Durov。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">482@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/482-pavel-durov.mp3" length="8321133" type="audio/mpeg" />
+      <itunes:duration>0:12:08</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Pavel Durov</itunes:author>
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#455 — Adam Frank: 地外文明与宇宙中的生命</title>
+      <description><![CDATA[Lex Fridman Podcast 第 455 期。<br/>嘉宾：Adam Frank。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">455@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/455-adam-frank.mp3" length="7378653" type="audio/mpeg" />
+      <itunes:duration>0:09:31</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Adam Frank</itunes:author>
+      <itunes:category text="Science" />
+    </item>
+  </channel>
+</rss>
