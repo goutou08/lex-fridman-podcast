@@ -37,6 +37,8 @@ cd "$DIR"
 echo "=== Initializing git ==="
 git config user.name "Hermes Agent" 2>/dev/null || true
 git config user.email "hermes@agent.local" 2>/dev/null || true
+# Workaround: environment may not support HTTP/2, force HTTP/1.1
+git config http.version HTTP/1.1
 
 if [ ! -d ".git" ]; then
     git init

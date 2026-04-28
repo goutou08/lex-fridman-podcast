@@ -142,6 +142,34 @@ EPISODE_DATA = {
         "Science",
         1289,
     ),
+    (479, None): (
+        "Windows Task Manager, ZIP, Microsoft Activation & Dave's Garage",
+        "Dave Plummer",
+        "Wed, 27 Aug 2025 00:00:00 +0000",
+        "Technology",
+        1089,
+    ),
+    (477, None): (
+        "Misunderstanding China, DeepSeek, Tariffs, Demographics & Economy",
+        "Keyu Jin",
+        "Wed, 13 Aug 2025 00:00:00 +0000",
+        "Economics",
+        1095,
+    ),
+    (476, 1): (
+        "Genghis Khan, Mongol Empire & the True History of War (Part 1)",
+        "Jack Weatherford",
+        "Tue, 05 Aug 2025 00:00:00 +0000",
+        "History",
+        7380,
+    ),
+    (476, 2): (
+        "Genghis Khan, Mongol Empire & the True History of War (Part 2)",
+        "Jack Weatherford",
+        "Tue, 05 Aug 2025 00:00:00 +0000",
+        "History",
+        8760,
+    ),
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
