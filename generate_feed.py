@@ -38,32 +38,10 @@ CHANNEL = {
     "explicit":    "false",
 }
 
-# Episode cover map: ep_num -> {part: url} or just the cover slug
-# For multi-part episodes: use part key
-EPISODE_COVER_MAP = {
-    455: {"cover": "455-adam.jpg"},
-    482: {"cover": "482-pavel.jpg"},
-    484: {"cover": "484-dan.jpg"},
-    487: {"cover": "487-irving.jpg"},
-    488: {"cover": "488-joel.jpg"},
-    490: {"part1": "490-state-part1.jpg", "part2": "490-state-part2.jpg"},
-    492: {"cover": "492-rick.jpg"},
-    493: {"part1": "493-jeff-part1.jpg", "part2": "493-jeff-part2.jpg", "part3": "493-jeff-part3.jpg"},
-    494: {"cover": "494-jensen.jpg"},
-    495: {"cover": "495-lars.jpg"},
-}
+# ~~已废弃 per-episode cover map~~：ffmpeg 内嵌封面方式不工作，所有期统一用主封面
+# def episode_cover_url(ep_num, part_m):
+#     return f"https://goutou08.github.io/lex-fridman-podcast/cover.jpg"
 
-def episode_cover_url(ep_num, part_m):
-    base = "https://goutou08.github.io/lex-fridman-podcast/covers"
-    if ep_num not in EPISODE_COVER_MAP:
-        return f"{base}/cover.jpg"  # fallback to main cover
-    ep_map = EPISODE_COVER_MAP[ep_num]
-    if part_m and "part1" in ep_map:
-        part_key = f"part{part_m.group(1)}"
-        fname = ep_map.get(part_key, ep_map.get("cover", "cover.jpg"))
-    else:
-        fname = ep_map.get("cover", "cover.jpg")
-    return f"{base}/{fname}"
 EPISODE_DATA = {
     # Format: (title_part, guest, pub_date_rfc2822, category, duration_sec)
     495: (
@@ -136,6 +114,34 @@ EPISODE_DATA = {
         "Science",
         571,
     ),
+    (481, 1): (
+        "Hitler, Nazis, Drugs, WW2, Blitzkrieg, LSD, MKUltra & CIA (Part 1)",
+        "Norman Ohler",
+        "Fri, 19 Sep 2025 00:00:00 +0000",
+        "History",
+        640,
+    ),
+    (481, 2): (
+        "Hitler, Nazis, Drugs, WW2, Blitzkrieg, LSD, MKUltra & CIA (Part 2)",
+        "Norman Ohler",
+        "Fri, 19 Sep 2025 00:00:00 +0000",
+        "History",
+        564,
+    ),
+    (483, None): (
+        "Criminal Psychology of Murder, Serial Killers, Memory & Sex",
+        "Julia Shaw",
+        "Tue, 14 Oct 2025 00:00:00 +0000",
+        "Psychology",
+        558,
+    ),
+    (480, None): (
+        "T-Rex, Dinosaurs, Extinction, Evolution, and Jurassic Park",
+        "Dave Hone",
+        "Thu, 04 Sep 2025 00:00:00 +0000",
+        "Science",
+        1289,
+    ),
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -188,9 +194,10 @@ def build_feed(base_url: str) -> str:
         part_m = re.search(r'-part(\d+)', fname, re.IGNORECASE)
         part_suffix = f" (第{part_m.group(1)}部分)" if part_m else ""
 
-        # Get metadata
-        if ep_num in EPISODE_DATA:
-            title_part, guest, pub_rfc, category, stored_dur = EPISODE_DATA[ep_num]
+        # Get metadata — EPISODE_DATA keys: int for single, (int, int) for multi-part
+        data_key = (ep_num, int(part_m.group(1))) if part_m else (ep_num, None)
+        if data_key in EPISODE_DATA:
+            title_part, guest, pub_rfc, category, stored_dur = EPISODE_DATA[data_key]
             title = f"#{ep_num} — {guest}: {title_part}{part_suffix}"
             description = (
                 f"Lex Fridman Podcast 第 {ep_num} 期。<br/>"
@@ -201,6 +208,22 @@ def build_feed(base_url: str) -> str:
                 description += f"<br/>{part_suffix}"
             pub_date = pub_rfc
             # Multi-part episodes: use actual per-file duration via ffprobe
+            if part_m:
+                actual_dur = get_duration(mp3)
+                duration = format_duration(actual_dur) if actual_dur else format_duration(stored_dur)
+            else:
+                duration = format_duration(stored_dur)
+        elif ep_num in EPISODE_DATA:
+            title_part, guest, pub_rfc, category, stored_dur = EPISODE_DATA[ep_num]
+            title = f"#{ep_num} — {guest}: {title_part}{part_suffix}"
+            description = (
+                f"Lex Fridman Podcast 第 {ep_num} 期。<br/>"
+                f"嘉宾：{guest}。<br/>"
+                f"由 Hermes Agent 生成的 AI 中文语音精读版。"
+            )
+            if part_suffix:
+                description += f"<br/>{part_suffix}"
+            pub_date = pub_rfc
             if part_m:
                 actual_dur = get_duration(mp3)
                 duration = format_duration(actual_dur) if actual_dur else format_duration(stored_dur)
@@ -227,7 +250,7 @@ def build_feed(base_url: str) -> str:
       <itunes:duration>{duration}</itunes:duration>
       <itunes:explicit>{CHANNEL['explicit']}</itunes:explicit>
       <itunes:author>{escape(guest if ep_num in EPISODE_DATA else 'Lex Fridman')}</itunes:author>
-      <itunes:image href="{episode_cover_url(ep_num, part_m)}" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="{category if ep_num in EPISODE_DATA else 'Technology'}" />
     </item>"""
         items_xml += "\n" + item

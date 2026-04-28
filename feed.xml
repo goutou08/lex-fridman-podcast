@@ -28,7 +28,7 @@
       <itunes:duration>0:10:38</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Lars Brownworth</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/495-lars.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="History" />
     </item>
     <item>
@@ -40,7 +40,7 @@
       <itunes:duration>0:07:52</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Jensen Huang</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/494-jensen.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Technology" />
     </item>
     <item>
@@ -52,7 +52,7 @@
       <itunes:duration>0:04:12</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Jeff Kaplan</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/493-jeff-part1.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Gaming" />
     </item>
     <item>
@@ -64,7 +64,7 @@
       <itunes:duration>0:04:53</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Jeff Kaplan</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/493-jeff-part2.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Gaming" />
     </item>
     <item>
@@ -76,7 +76,7 @@
       <itunes:duration>0:05:42</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Jeff Kaplan</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/493-jeff-part3.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Gaming" />
     </item>
     <item>
@@ -88,7 +88,7 @@
       <itunes:duration>0:10:54</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Rick Beato</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/492-rick.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Music" />
     </item>
     <item>
@@ -100,7 +100,7 @@
       <itunes:duration>0:06:22</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>State of AI 2026</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/490-state-part1.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Technology" />
     </item>
     <item>
@@ -112,7 +112,7 @@
       <itunes:duration>0:07:45</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>State of AI 2026</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/490-state-part2.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Technology" />
     </item>
     <item>
@@ -124,7 +124,7 @@
       <itunes:duration>0:09:02</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Joel David Hamkins</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/488-joel.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Mathematics" />
     </item>
     <item>
@@ -136,7 +136,7 @@
       <itunes:duration>0:07:07</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Irving Finkel</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/487-irving.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="History" />
     </item>
     <item>
@@ -148,8 +148,20 @@
       <itunes:duration>0:05:21</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Dan Houser</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/484-dan.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Gaming" />
+    </item>
+    <item>
+      <title>#483 — Julia Shaw: Criminal Psychology of Murder, Serial Killers, Memory &amp; Sex</title>
+      <description><![CDATA[Lex Fridman Podcast 第 483 期。<br/>嘉宾：Julia Shaw。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">483@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/483-julia-shaw.mp3" length="8287005" type="audio/mpeg" />
+      <itunes:duration>0:09:18</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Lex Fridman</itunes:author>
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
+      <itunes:category text="Technology" />
     </item>
     <item>
       <title>#482 — Pavel Durov: Telegram, Freedom, Censorship, Money, Power &amp; Human Nature</title>
@@ -160,7 +172,43 @@
       <itunes:duration>0:12:08</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Pavel Durov</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/482-pavel.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#481 — Norman Ohler: Hitler, Nazis, Drugs, WW2, Blitzkrieg, LSD, MKUltra &amp; CIA (Part 2) (第2部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 481 期。<br/>嘉宾：Norman Ohler。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第2部分)]]></description>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">481-2@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/481-norman-ohler-part2.mp3" length="6837789" type="audio/mpeg" />
+      <itunes:duration>0:09:23</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Lex Fridman</itunes:author>
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#481 — Norman Ohler: Hitler, Nazis, Drugs, WW2, Blitzkrieg, LSD, MKUltra &amp; CIA (Part 1) (第1部分)</title>
+      <description><![CDATA[Lex Fridman Podcast 第 481 期。<br/>嘉宾：Norman Ohler。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。<br/> (第1部分)]]></description>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">481-1@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/481-norman-ohler-part1.mp3" length="7294413" type="audio/mpeg" />
+      <itunes:duration>0:10:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Lex Fridman</itunes:author>
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
+      <itunes:category text="Technology" />
+    </item>
+    <item>
+      <title>#480 — Dave Hone: T-Rex, Dinosaurs, Extinction, Evolution, and Jurassic Park</title>
+      <description><![CDATA[Lex Fridman Podcast 第 480 期。<br/>嘉宾：Dave Hone。<br/>由 Hermes Agent 生成的 AI 中文语音精读版。]]></description>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">480@lexfridman-tts</guid>
+      <enclosure url="https://goutou08.github.io/lex-fridman-podcast/episodes/480-dave-hone.mp3" length="17607261" type="audio/mpeg" />
+      <itunes:duration>0:21:29</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:author>Lex Fridman</itunes:author>
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Technology" />
     </item>
     <item>
@@ -172,7 +220,7 @@
       <itunes:duration>0:09:31</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:author>Adam Frank</itunes:author>
-      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/covers/455-adam.jpg" />
+      <itunes:image href="https://goutou08.github.io/lex-fridman-podcast/cover.jpg" />
       <itunes:category text="Science" />
     </item>
   </channel>
